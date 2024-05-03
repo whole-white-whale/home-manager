@@ -7,6 +7,8 @@
     username = "sery";
   };
 
+  programs.bash.enable = true;
+
   services.sxhkd = {
     enable = true;
 
