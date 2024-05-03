@@ -32,6 +32,11 @@
     };
 
     home-manager.enable = true;
+
+    neovim = {
+      defaultEditor = true;
+      enable = true;
+    };
   };
 
   services.sxhkd = {
