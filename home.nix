@@ -7,7 +7,10 @@
     username = "sery";
   };
 
-  programs.bash.enable = true;
+  programs = {
+    bash.enable = true;
+    home-manager.enable = true;
+  };
 
   services.sxhkd = {
     enable = true;
