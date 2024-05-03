@@ -24,6 +24,13 @@
 
     bash.enable = true;
     firefox.enable = true;
+
+    git = {
+      enable = true;
+      userEmail = "whole-white-whale@yandex.ru";
+      userName = "Sergey Kirichenko";
+    };
+
     home-manager.enable = true;
   };
 
