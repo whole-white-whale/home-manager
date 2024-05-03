@@ -8,6 +8,20 @@
   };
 
   programs = {
+    alacritty = {
+      enable = true;
+
+      settings = {
+        font.size = 12;
+        mouse.hide_when_typing = true;
+
+        window.padding = {
+          x = 4;
+          y = 4;
+        };
+      };
+    };
+
     bash.enable = true;
     home-manager.enable = true;
   };
