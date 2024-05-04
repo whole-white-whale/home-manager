@@ -37,6 +37,64 @@
       enable = true;
 
       settings = {
+        colors = {
+          primary = {
+            foreground = "#cdd6f4";
+            background = "#1e1e2e";
+          };
+
+          search = {
+            matches = {
+              foreground = "#1e1e2e";
+              background = "#a6adc8";
+            };
+
+            focused_match = {
+              foreground = "#1e1e2e";
+              background = "#a6e3a1";
+            };
+          };
+
+          hints = {
+            start = {
+              foreground = "#1e1e2e";
+              background = "#f9e2af";
+            };
+
+            end = {
+              foreground = "#1e1e2e";
+              background = "#a6adc8";
+            };
+          };
+
+          footer_bar = {
+            foreground = "#1e1e2e";
+            background = "#a6adc8";
+          };
+
+          normal = {
+            black = "#45475a";
+            red = "#f38ba8";
+            green = "#a6e3a1";
+            yellow = "#f9e2af";
+            blue = "#89b4fa";
+            magenta = "#f5c2e7";
+            cyan = "#94e2d5";
+            white = "#bac2de";
+          };
+
+          bright = {
+            black = "#585B70";
+            red = "#F38BA8";
+            green = "#A6E3A1";
+            yellow = "#F9E2AF";
+            blue = "#89B4FA";
+            magenta = "#F5C2E7";
+            cyan = "#94E2D5";
+            white = "#A6ADC8";
+          };
+        };
+
         font = {
           normal.family = "Iosevka NFM";
           size = 12;
