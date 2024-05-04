@@ -55,6 +55,11 @@
         set expandtab shiftwidth=0 tabstop=2
       '';
     };
+
+    zathura = {
+      enable = true;
+      options.font = "Iosevka NFM 12";
+    };
   };
 
   services = {
