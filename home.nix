@@ -22,7 +22,25 @@
 
   home = {
     file.".config/lvim/config.lua".text = ''
-      lvim.colorscheme = "default"
+      lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
+      lvim.colorscheme = "catppuccin"
+
+      lvim.plugins = {
+        {
+          "catppuccin/nvim",
+          name = "catppuccin",
+
+          opts = {
+            transparent_background = true,
+          }
+        }
+      }
+
+      vim.diagnostic.config({
+        virtual_text = false,
+      })
+
+      vim.opt.relativenumber = true
     '';
 
     homeDirectory = "/home/sery";
