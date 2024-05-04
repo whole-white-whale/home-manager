@@ -15,9 +15,13 @@
         font.size = 12;
         mouse.hide_when_typing = true;
 
-        window.padding = {
-          x = 4;
-          y = 4;
+        window = {
+          opacity = 0.75;
+
+          padding = {
+            x = 4;
+            y = 4;
+          };
         };
       };
     };
@@ -39,19 +43,23 @@
     };
   };
 
-  services.sxhkd = {
-    enable = true;
+  services = {
+    picom.enable = true;
 
-    keybindings = {
-      "super + Escape" = "pkill -USR1 sxhkd";
-      "super + Return" = "alacritty";
-      "super + w" = "firefox";
-      "super + {_,ctrl + ,shift + }c" = "bspc node {-c,-p cancel,-k}";
-      "super + {_,ctrl + ,shift + }{h,j,k,l}" = "bspc node {-f,-p,-s} {west,south,north,east}";
-      "super + {_,shift + }{1-8}" = "bspc {desktop -f,node -d} '^{1-8}'";
-      "super + ctrl + m" = "bspc desktop -l next";
-      "super + ctrl + {t,p,s,f}" = "bspc node -t {tiled,pseudo_tiled,floating,fullscreen}";
-      "super + ctrl + {x,y,z}" = "bspc node -g {locked,sticky,private}";
+    sxhkd = {
+      enable = true;
+
+      keybindings = {
+        "super + Escape" = "pkill -USR1 sxhkd";
+        "super + Return" = "alacritty";
+        "super + w" = "firefox";
+        "super + {_,ctrl + ,shift + }c" = "bspc node {-c,-p cancel,-k}";
+        "super + {_,ctrl + ,shift + }{h,j,k,l}" = "bspc node {-f,-p,-s} {west,south,north,east}";
+        "super + {_,shift + }{1-8}" = "bspc {desktop -f,node -d} '^{1-8}'";
+        "super + ctrl + m" = "bspc desktop -l next";
+        "super + ctrl + {t,p,s,f}" = "bspc node -t {tiled,pseudo_tiled,floating,fullscreen}";
+        "super + ctrl + {x,y,z}" = "bspc node -g {locked,sticky,private}";
+      };
     };
   };
 
