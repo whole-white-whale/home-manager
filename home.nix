@@ -48,8 +48,8 @@
     lazygit.enable = true;
 
     neovim = {
-      defaultEditor = true;
       enable = true;
+      defaultEditor = true;
 
       extraConfig = ''
         set expandtab shiftwidth=0 tabstop=2
