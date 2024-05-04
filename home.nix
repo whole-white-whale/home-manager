@@ -1,6 +1,25 @@
 { pkgs, ... }:
 
 {
+  gtk = {
+    enable = true;
+
+    font = {
+      name = "Iosevka NFM";
+      size = 12;
+    };
+
+    iconTheme = {
+      name = "Papirus-Dark";
+      package = pkgs.papirus-icon-theme;
+    };
+
+    theme = {
+      name = "Arc-Dark";
+      package = pkgs.arc-theme;
+    };
+  };
+
   home = {
     homeDirectory = "/home/sery";
 
