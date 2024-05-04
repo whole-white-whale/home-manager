@@ -3,6 +3,11 @@
 {
   home = {
     homeDirectory = "/home/sery";
+
+    packages = with pkgs; [
+      lunarvim
+    ];
+
     stateVersion = "23.11";
     username = "sery";
   };
@@ -40,10 +45,15 @@
     };
 
     home-manager.enable = true;
+    lazygit.enable = true;
 
     neovim = {
       defaultEditor = true;
       enable = true;
+
+      extraConfig = ''
+        set expandtab shiftwidth=0 tabstop=2
+      '';
     };
   };
 
