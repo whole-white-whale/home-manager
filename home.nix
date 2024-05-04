@@ -56,6 +56,8 @@
       '';
     };
 
+    starship.enable = true;
+
     zathura = {
       enable = true;
       options.font = "Iosevka NFM 12";
