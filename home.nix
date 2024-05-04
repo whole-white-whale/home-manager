@@ -30,6 +30,7 @@
     packages = with pkgs; [
       brightnessctl
       lunarvim
+      telegram-desktop
     ];
 
     stateVersion = "23.11";
