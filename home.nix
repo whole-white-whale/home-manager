@@ -12,7 +12,11 @@
       enable = true;
 
       settings = {
-        font.size = 12;
+        font = {
+          normal.family = "Iosevka NFM";
+          size = 12;
+        };
+
         mouse.hide_when_typing = true;
 
         window = {
@@ -64,6 +68,8 @@
           radius = 8;
           line-size = 2;
           padding = 1;
+
+          font-0 = "Iosevka NFM:size=12;3";
 
           modules-left = "bspwm";
           modules-center = "date";
