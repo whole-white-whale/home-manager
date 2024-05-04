@@ -60,7 +60,53 @@
 
     zathura = {
       enable = true;
-      options.font = "Iosevka NFM 12";
+
+      options = {
+        completion-bg = "#313244";
+        completion-fg = "#cdd6f4";
+
+        completion-highlight-bg = "#575268";
+        completion-highlight-fg = "#cdd6f4";
+
+        completion-group-bg = "#313244";
+        completion-group-fg = "#89b4fa";
+
+        default-bg = "#1e1e2e";
+        default-fg = "#cdd6f4";
+
+        font = "Iosevka NFM 12";
+
+        highlight-active-color = "#f5c2e7";
+        highlight-color = "#575268";
+        highlight-fg = "#f5c2e7";
+
+        index-bg = "#1e1e2e";
+        index-fg = "#cdd6f4";
+
+        index-active-bg = "#313244";
+        index-active-fg = "#cdd6f4";
+
+        inputbar-bg = "#313244";
+        inputbar-fg = "#cdd6f4";
+
+        notification-bg = "#313244";
+        notification-fg = "#cdd6f4";
+
+        notification-error-bg = "#313244";
+        notification-error-fg = "#f38ba8";
+
+        notification-warning-bg = "#313244";
+        notification-warning-fg = "#fae3b0";
+
+        recolor-darkcolor = "#cdd6f4";
+        recolor-lightcolor = "#1e1e2e";
+
+        render-loading-bg = "#1e1e2e";
+        render-loading-fg = "#cdd6f4";
+
+        statusbar-bg = "#313244";
+        statusbar-fg = "#cdd6f4";
+      };
     };
   };
 
