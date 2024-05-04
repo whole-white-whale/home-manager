@@ -69,6 +69,7 @@
 
     polybar = {
       enable = true;
+      package = pkgs.polybarFull;
       script = "polybar top &";
 
       settings = {
@@ -196,25 +197,29 @@
     };
   };
 
-  xsession.windowManager.bspwm = {
+  xsession = {
     enable = true;
 
-    monitors.eDP-1 = [
-      "1"
-      "2"
-      "3"
-      "4"
-      "5"
-      "6"
-      "7"
-      "8"
-    ];
+    windowManager.bspwm = {
+      enable = true;
 
-    settings = {
-      border_width = 2;
-      focused_border_color = "#a6e3a1";
-      normal_border_color = "#6c7086";
-      split_ratio = 0.5;
+      monitors.eDP-1 = [
+        "1"
+        "2"
+        "3"
+        "4"
+        "5"
+        "6"
+        "7"
+        "8"
+      ];
+
+      settings = {
+        border_width = 2;
+        focused_border_color = "#a6e3a1";
+        normal_border_color = "#6c7086";
+        split_ratio = 0.5;
+      };
     };
   };
 }
