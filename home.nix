@@ -5,6 +5,7 @@
     homeDirectory = "/home/sery";
 
     packages = with pkgs; [
+      brightnessctl
       lunarvim
     ];
 
@@ -239,6 +240,9 @@
         "super + ctrl + m" = "bspc desktop -l next";
         "super + ctrl + {t,p,s,f}" = "bspc node -t {tiled,pseudo_tiled,floating,fullscreen}";
         "super + ctrl + {x,y,z}" = "bspc node -g {locked,sticky,private}";
+        "XF86AudioMute" = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
+        "XF86Audio{Lower,Raise}Volume" = "wpctl set-volume @DEFAULT_AUDIO_SINK@ {10%-,10%+}";
+        "XF86MonBrightness{Down,Up}" = "brightnessctl set {10%-,+10%}";
       };
     };
   };
