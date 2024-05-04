@@ -21,6 +21,10 @@
   };
 
   home = {
+    file.".config/lvim/config.lua".text = ''
+      lvim.colorscheme = "default"
+    '';
+
     homeDirectory = "/home/sery";
 
     packages = with pkgs; [
