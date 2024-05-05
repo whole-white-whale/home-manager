@@ -158,6 +158,12 @@
       '';
     };
 
+    rofi = {
+      enable = true;
+      font = "Iosevka NFM 12";
+      theme = "Arc-Dark";
+    };
+
     starship.enable = true;
 
     zathura = {
@@ -335,6 +341,7 @@
         "super + Escape" = "pkill -USR1 sxhkd";
         "super + Return" = "alacritty";
         "super + w" = "firefox";
+        "super + d" = "rofi -show drun";
         "super + {_,ctrl + ,shift + }c" = "bspc node {-c,-p cancel,-k}";
         "super + {_,ctrl + ,shift + }{h,j,k,l}" = "bspc node {-f,-p,-s} {west,south,north,east}";
         "super + {_,shift + }{1-8}" = "bspc {desktop -f,node -d} '^{1-8}'";
